@@ -10,6 +10,12 @@
       data-n-g=""
     />
   </head>
+  <script defer>
+    function handleBtn (){
+      document.getElementById('btn').classList.toggle('collapsed');
+      document.getElementById('navbarSupportedContent').classList.toggle('show');
+    }
+    </script>
   <body>
     <div id="__next" >
       <div id="navbar" class="navbar-area fixed-top" style="background-color: red;">
@@ -18,6 +24,8 @@
             <a class="navbar-brand" href="/"
               ><img src="/images/white-logo.png" alt="logo" /></a
             ><button
+            onclick="handleBtn()"
+            id="btn"
               class="navbar-toggler navbar-toggler-right collapsed"
               type="button"
               data-toggle="collapse"
@@ -205,21 +213,5 @@
           </div>
         </nav>
       </div>
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script id="__NEXT_DATA__" type="application/json">
-      {
-        "props": { "pageProps": {} },
-        "page": "/",
-        "query": {},
-        "buildId": "wR-1XG2f7hsOdiNBaAsV7",
-        "nextExport": true,
-        "autoExport": true,
-        "isFallback": false,
-        "scriptLoader": []
-      }
-    </script>
   </body>
 </html>
